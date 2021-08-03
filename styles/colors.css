@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 250px;
+}
+/*
+  Color palabra clave
+*/
+.circle{
+  background-color: royalblue;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+/*
+  Color rgb decimal
+*/
+.circle2 {
+  background-color: rgb(20, 50, 150);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+/*
+  Color porcentual
+*/
+.circle3 {
+  background-color: rgb(40%, 30%, 90%);
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+}
+
+
+
+/*
+  Color hexadecimal
+*/
+.circle4{
+  background-color: #eb4034;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.circle5{
+  background-color: rgba(25 , 30, 10, .5);
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.ejemplo{
+  height: 250px;
+  width: 150px;
+  padding: 10px;
+  border:solid 6px black;
+}
+.ejemplo2{
+  font-size: 100px;
+  border:solid 6px red;
+  padding: 30px;
+  margin-top: 20px;
+}
