@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM JS</title>
+  <style>
+    .title{
+      font-size: 10px;
+    }
+
+    .pintarRojo{
+      background-color: red;
+    }
+
+    .addPink{
+      color: pink;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 id="title" class="pintarRojo">DOM</h1>
+  <button onclick="changeDom()">Change to Dom</button>
+
+  <h2 id="addPink" class="">lo que sea</h2>
+  <h2></h2>
+
+  <p class="parrafo">Lorem ipsum dolor sit amet.</p>
+  <p class="parrafo">Lorem ipsum dolor sit amet.</p>
+
+  <img id="imagen" src="../src/program.gif" alt="img">
+
+
+  <script>
+    // Obtener elemento por id
+    const titulo    = document.getElementById( 'title' );
+    // Obtener elementos por <tagname> [ ]
+    const subtitulo = document.getElementsByTagName('h2');
+    // Obtener elemento por classname
+    const parrafo   = document.getElementsByClassName('parrafo');
+    const h2 = document.querySelector('#addPink');
+    
+    h2.classList.add('addPink');
+    
+    titulo.classList.remove('pintarRojo');
+
+
+
+   // querySelector('# , .');
+    const imagen = document.querySelector('#imagen');
+
+    imagen.src = '../src/ichigo.png'
+    
+    parrafo[0].style.fontSize ="100px";
+    parrafo[1].style.color = 'blue';
+    
+    // Cambiar titulo
+    const changeDom = () =>{
+      titulo.innerHTML = 'MAGIA :o';
+    }
+
+
+    // Cambiamos el contenido del elemento
+    titulo.innerHTML = 'DOCUMENT OBJECT MODEL';
+
+    subtitulo[0].innerHTML = 'Soy el primer h2';
+    subtitulo[1].innerHTML = 'Soy el SEGUNDO h2';
+
+
+
+
+
+  </script>
+</body>
+</html>

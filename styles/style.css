@@ -58,3 +58,28 @@ a {
   font-weight: 600;
   text-decoration: none;
 }
+
+
+@media screen and (max-width:767px) {
+  .lado_izq{
+    background-color: coral;
+  }
+  .lado_der{
+    background-color: crimson;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width: 1024px){
+  .lado_izq{
+    background-color: rgb(80, 255, 80);
+  }
+  .lado_der{
+    background-color: rgb(217, 220, 20);
+  }
+
+}
+
+@media screen and (min-width:1025px){
+
+}
+

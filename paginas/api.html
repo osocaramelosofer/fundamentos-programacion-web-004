@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/api.css">
+</head>
+
+<body>
+    <div class="card" id="card">
+        <div class="card__content">
+
+            <div class="image__container">
+                <img class="image" id="imagen" src="" alt="">
+            </div>
+
+            <span>Nombre:  <span id="nombre" class="name">Nombre</span></span>
+            <br>
+            <span>Tipo: <span id="type" class="type">Tipo </span></span>
+            <br>
+            <span>Peso: <span id="weight">Peso</span> Kg.</span>
+
+        </div>
+    </div>
+
+
+    <script>
+
+        const url = `https://pokeapi.co/api/v2/pokemon/10`
+
+        fetch(url).then(function (response) {
+            return response.json();
+        }).then(function (data) {
+
+            let nombre = document.getElementById("nombre");
+            nombre.innerHTML = data.name
+
+            let img = document.getElementById('imagen');
+            img.src = data.sprites.front_default
+
+            let type = document.getElementById('type');
+            type.innerHTML = data.types[0].type.name
+
+            let peso = document.getElementById('weight');
+            peso.innerHTML = data.weight;
+
+        }).catch(function (error) {
+            alert("Error pokemon no encontrado")
+        });
+
+
+        const datos = {
+            "nombre": "Fernando",
+            "apellido": "Hernandez",
+            "colores": {
+                "primerColor": "azul",
+                "segundoColor": "amarillo",
+            },
+            "comida": ['pizza', 'pozole']
+        }
+
+        console.log( datos.colores.segundoColor );
+        console.log( datos.comida[1] );
+
+        const botella ={
+          "color": "verde",
+          "tamano": 1.8,
+          "peso": 200,
+        }
+        console.log( botella.tamano );
+
+
+
+    </script>
+</body>
+
+</html>

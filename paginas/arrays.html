@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays & Bucles</title>
+</head>
+<body>
+  <h1>Arrays JS & Bucles</h1>
+
+  <script>
+    //   posiciones     0             1           2          3
+    let cajonera = ['pantalones', 'calcetas', 'playera', 'sudadera'];
+    // Obtener un elemento especifico
+    //console.log(cajonera[2]);
+
+    // modificar un valor 
+    cajonera[0] = 'zapatos';
+
+    // Saber el tamaño de nuestro arreglo
+    //console.log("El tamaño de nuestro arreglo es: " + cajonera.length);
+
+    // Agregar elemento al final del arreglo
+    cajonera.push("gorra");
+
+    // Eliminar último elemento
+    cajonera.pop();
+
+    //Eliminar primer elemento
+    cajonera.shift();
+    
+    // Bucle for
+    // estado_inicial; condición; siguiente_estado
+    /*
+    let recorrido = 0;
+    console.log("Mi recorrido es: "+ recorrido);
+
+    for( recorrido ; recorrido < 3; recorrido += 1 ){
+      console.log("Corrí 1km");
+    }
+
+    console.log("Recorrí: "+ recorrido);
+    */
+
+    //tamaño del arreglo
+    console.log(cajonera);
+    let cantidad = cajonera.length;
+    let posicion = 0;
+
+    // estado_inicial; condición; siguiente_estado
+    for(posicion; posicion < 10; posicion ++ ){
+      console.log("Adios chicos");
+    } 
+
+
+    
+
+
+    
+
+  </script>
+</body>
+</html>
